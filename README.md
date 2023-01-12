@@ -10,7 +10,7 @@ If a node is a parent of other node(s), these "children" should appear in an arr
 --------------------
 The solution
 --------------------
-I used a depth-first search (DFS) algorithm to solve this problem because it is well suited to traversing and manipulating tree structures, which is the type of data. DFS algorithms start at the root of the tree and traverse as deep as possible along each branch before backtracking.
+I used a depth-first search (DFS) algorithm to solve this problem because it is well suited to traversing and manipulating tree structures. DFS algorithms start at the root of the tree and traverse as deep as possible along each branch before backtracking.
 They can be implemented recursively, allowing me to traverse the tree structure in a natural and intuitive way. In my code, the function **`addChildren`** is a recursive function that starts at the root of the tree and traverses down each branch, adding the children of each node to the **`children`** property of the parent node. 
 This recursive function allowed me to easily traverse the tree and build the desired structure.
 Another advantage of using DFS algorithm is that it is more memory-efficient compared to breadth-first search (BFS) algorithm since it does not need to store all the children of a node in memory before traversing to its next child.
