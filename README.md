@@ -36,7 +36,9 @@ Using a hashmap in conjunction with a DFS algorithm can make the solution more e
 The space complexity of adding a hashmap to a depth-first search algorithm is O(n), where n is the number of nodes in the tree. This is because we use a hashmap to store a mapping between each node's unique identifier and the corresponding node object. The size of the hashmap will be proportional to the number of nodes in the tree, so as the number of nodes increases, the space required for the hashmap will also increase linearly.
 
 The time complexity of adding a hashmap to a depth-first search algorithm is also O(n), where n is the number of nodes in the tree. This is because we need to traverse the entire tree once to build the hashmap, and then we use the hashmap to quickly access the nodes we need during the DFS traversal. Since we are only visiting each node once, the time complexity of building the hashmap and the DFS traversal is linear in the number of nodes in the tree.
+
 However, using a hashmap can make the algorithm more efficient as it allows us to quickly access a specific node in the tree without having to traverse the entire tree, which can be very useful if the tree is large. In other words, the tradeoff is that it increases the space complexity but decrease the time complexity and make the algorithm more efficient.
+
 ----------------------
 Code Explanation 
 ----------------------
